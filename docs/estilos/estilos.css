@@ -13,11 +13,13 @@ header {
 nav {
     border: 2px solid green;
     height: 70px;
+    margin: 5px 0px 5px 0px;
 }
 
 section {
     border: 2px solid yellow;
     height:390px;
+    
 }
 
 footer {
@@ -34,21 +36,27 @@ aside {
 
 article {
     border: 2px solid black;
-    height: 123px;
+    height: 80px;
     width: 728px;
     float: right;
+    font-display: inline-block;
 }
 
 article {
-    border: 2px solid grey;
-    height: 123px;
+    border: 2px solid black;
+    height: 180px;
     width: 728px;
-    float: right;
+    float: clear;
+    margin-bottom: 15px;
 }
 
-article {
-    border: 2px solid blue;
-    height: 123px;
-    width: 728px;
-    float: right;
+ul li {
+    border: 2px solid rgba(54, 56, 55, 0.74);
+    width: 240px;
+    display: inline-block;
+    font-family: 'Rajdhani', sans-serif;
+}
+
+header img{
+    height: 95px;
 }
