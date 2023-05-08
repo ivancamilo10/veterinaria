@@ -1,26 +1,54 @@
 main {
-    border: 1px solid red;
+    border: 2px solid red;
     height: 630px;
     width: 1100px;
     margin: auto; 
 }
 
 header {
-    border: 1px solid blue;
+    border: 2px solid blue;
     height: 100px;
 }
 
 nav {
-    border: 1px solid green;
-    height: 150px;
+    border: 2px solid green;
+    height: 70px;
 }
 
 section {
-    border: 1px solid yellow;
-    height:480px;
+    border: 2px solid yellow;
+    height:390px;
 }
 
 footer {
-    border: 1px solid purple;
-    height: 600px;
+    border: 2px solid purple;
+    height: 50px;
+}
+
+aside {
+    border: 2px solid red;
+    width: 350px;
+    height: 385px;
+    float: left;
+}
+
+article {
+    border: 2px solid black;
+    height: 123px;
+    width: 728px;
+    float: right;
+}
+
+article {
+    border: 2px solid grey;
+    height: 123px;
+    width: 728px;
+    float: right;
+}
+
+article {
+    border: 2px solid blue;
+    height: 123px;
+    width: 728px;
+    float: right;
 }
