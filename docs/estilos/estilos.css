@@ -1,0 +1,62 @@
+main {
+    border: 2px solid red;
+    height: 630px;
+    width: 1100px;
+    margin: auto; 
+}
+
+header {
+    border: 2px solid blue;
+    height: 100px;
+}
+
+nav {
+    border: 2px solid green;
+    height: 70px;
+    margin: 5px 0px 5px 0px;
+}
+
+section {
+    border: 2px solid yellow;
+    height:390px;
+    
+}
+
+footer {
+    border: 2px solid purple;
+    height: 50px;
+}
+
+aside {
+    border: 2px solid red;
+    width: 350px;
+    height: 385px;
+    float: left;
+}
+
+article {
+    border: 2px solid black;
+    height: 80px;
+    width: 728px;
+    float: right;
+    font-display: inline-block;
+}
+
+article {
+    border: 2px solid black;
+    height: 180px;
+    width: 728px;
+    float: clear;
+    margin-bottom: 15px;
+}
+
+ul li {
+    border: 2px solid rgba(54, 56, 55, 0.74);
+    width: 240px;
+    display: inline-block;
+    font-family: 'Rajdhani', sans-serif;
+}
+
+header img{
+    height: 95px;
+}
