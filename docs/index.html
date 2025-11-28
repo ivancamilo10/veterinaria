@@ -1,33 +1,188 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Rajdhani&display=swap" rel="stylesheet">
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="estilos/estilos.css">
-        <title>Veterinaria Barranquilla</title>
-    </head>
-    <body>
-        <main>
-            <header><img src="C:\Users\SENA\Documents\GitHub\veterinaria\docs\img\veterinary-g708b75f38_640.jpg" alt=""></header>
-            <nav>
-                <ul>
-                    <li>.SERVICIOS.</li>
-                    <li>.PRODUCTOS.</li>
-                    <li>.GUARDERIA.</li>
-                    <li>.PROMOCIONES.</li>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Fuente Rajdhani -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="estilos/estilos.css">
+    <title>Veterinaria Barranquilla</title>
+</head>
+<body id="top" data-theme="dark">
+    <header class="hero">
+        <div class="hero-overlay">
+            <nav class="main-nav container">
+                <a href="#top" class="logo">VetBarranquilla</a>
+
+                <button class="nav-toggle" type="button" aria-label="Abrir menú de navegación">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+
+                <ul class="nav-links">
+                    <li><a href="#servicios" class="js-scroll">Servicios</a></li>
+                    <li><a href="#productos" class="js-scroll">Productos</a></li>
+                    <li><a href="#guarderia" class="js-scroll">Guardería</a></li>
+                    <li><a href="#promociones" class="js-scroll">Promociones</a></li>
                 </ul>
-            </nav>
-            <section>
-                    <aside></aside>
-                    <article></article>
-                    <article></article>
+
+                <div class="nav-actions">
                     
-            </section>
-            <footer></footer>
-        </main>  
-    </body>
+                    <a href="#cita" class="btn btn-outline js-scroll">Agendar cita</a>
+                </div>
+            </nav>
+
+            <div class="hero-content container reveal">
+                <h1>Cuidamos a tus mascotas como a nuestra familia</h1>
+                <p>Atención veterinaria integral, urgencias 24/7, guardería y tienda especializada en Barranquilla.</p>
+                <div class="hero-actions">
+                    <a href="#cita" class="btn btn-primary js-scroll">Reserva tu cita</a>
+                    <a href="#servicios" class="btn btn-secondary js-scroll">Ver servicios</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Servicios -->
+        <section id="servicios" class="section container reveal">
+            <h2>Servicios veterinarios</h2>
+            <p>Todo lo que tu mascota necesita en un solo lugar.</p>
+
+            <div class="cards-grid">
+                <article class="card reveal">
+                    <h3>Consultas y vacunas</h3>
+                    <p>Chequeos generales, planes de vacunación y controles periódicos.</p>
+                </article>
+                <article class="card reveal">
+                    <h3>Cirugías y urgencias</h3>
+                    <p>Quirófano equipado y atención inmediata 24/7.</p>
+                </article>
+                <article class="card reveal">
+                    <h3>Lab. y diagnóstico</h3>
+                    <p>Laboratorio clínico, ecografías y rayos X para diagnósticos precisos.</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- Productos -->
+        <section id="productos" class="section section-alt reveal">
+            <div class="container">
+                <h2>Productos destacados</h2>
+                <p>Alimentos premium, medicamentos y accesorios para perro y gato.</p>
+
+                <div class="cards-grid">
+                    <article class="card product-card reveal">
+                        <h3>Alimento super premium</h3>
+                        <p>Nutrición completa según la etapa de vida de tu mascota.</p>
+                        <button class="btn btn-small">Ver más</button>
+                    </article>
+                    <article class="card product-card reveal">
+                        <h3>Juguetes interactivos</h3>
+                        <p>Estimulan el juego y reducen el estrés de tu mascota.</p>
+                        <button class="btn btn-small">Ver más</button>
+                    </article>
+                    <article class="card product-card reveal">
+                        <h3>Higiene y cuidado</h3>
+                        <p>Shampoo, cepillos, collares antipulgas y más.</p>
+                        <button class="btn btn-small">Ver más</button>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Guardería -->
+        <section id="guarderia" class="section container reveal">
+            <h2>Guardería & hotel</h2>
+            <p>Un lugar seguro y divertido mientras tú trabajas o viajas.</p>
+
+            <div class="guarderia-layout">
+                <div class="guarderia-text">
+                    <ul class="list-check">
+                        <li>Áreas separadas para perros y gatos.</li>
+                        <li>Supervisión permanente por personal capacitado.</li>
+                        <li>Reportes y fotos de tu mascota durante el día.</li>
+                    </ul>
+
+                    <div class="faq">
+                        <button class="faq-question" type="button">
+                            ¿Qué debo llevar para la estadía?
+                        </button>
+                        <div class="faq-answer">
+                            <p>Te recomendamos traer el alimento habitual, carnet de vacunas y algún juguete o manta que le guste.</p>
+                        </div>
+                    </div>
+
+                    <a href="#cita" class="btn btn-primary js-scroll">Cotizar estadía</a>
+                </div>
+                <div class="guarderia-box reveal">
+                    <p>“Mi perro ama venir aquí, siempre sale feliz y tranquilo.”</p>
+                    <span>- Cliente de la clínica</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Promociones -->
+        <section id="promociones" class="section section-alt reveal">
+            <div class="container">
+                <h2>Promociones del mes</h2>
+                <div class="cards-grid promos-grid">
+                    <article class="card promo-card reveal" data-promo-tag="Plan cachorros">
+                        <h3>Plan cachorros</h3>
+                        <p>Descuento en vacunación + consulta de control.</p>
+                        <span class="promo-tag">-20%</span>
+                    </article>
+                    <article class="card promo-card reveal" data-promo-tag="Desparasitación">
+                        <h3>Desparasitación</h3>
+                        <p>Precio especial por tratar a más de una mascota.</p>
+                        <span class="promo-tag">2x1</span>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Formulario cita -->
+        <section id="cita" class="section section-cta reveal">
+            <div class="container cta-container">
+                <div>
+                    <h2>Agenda tu cita en minutos</h2>
+                    <p id="cita-texto">Déjanos tus datos y te confirmamos por WhatsApp.</p>
+                </div>
+                <form class="cita-form" novalidate>
+                    <input type="text" id="nombre" name="nombre" placeholder="Nombre completo" required>
+                    <input type="text" id="mascota" name="mascota" placeholder="Nombre de tu mascota" required>
+                    <input type="tel" id="telefono" name="telefono" placeholder="Teléfono / WhatsApp" required>
+                    <select id="motivo" name="motivo" required>
+                        <option value="">Motivo de la cita</option>
+                        <option value="consulta">Consulta general</option>
+                        <option value="vacunas">Vacunas</option>
+                        <option value="urgencia">Urgencia no vital</option>
+                        <option value="guarderia">Guardería / hotel</option>
+                    </select>
+                    <button type="submit" class="btn btn-primary btn-block">Solicitar cita</button>
+                    <p class="form-message" aria-live="polite"></p>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-content">
+            <p>© 2025 VetBarranquilla · Todos los derechos reservados</p>
+            <p>Cra 00 # 00 - Barranquilla · Urgencias 24/7: (300) 000 0000</p>
+        </div>
+    </footer>
+
+    <button class="back-to-top" type="button" aria-label="Volver al inicio">
+        ↑
+    </button>
+
+    <script src="js/app.js"></script>
+</body>
 </html>
