@@ -1,0 +1,16 @@
+services:
+  db:
+    image: postgres:16
+    container_name: peluvis_db
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: peluvis_user
+      POSTGRES_PASSWORD: peluvis_password
+      POSTGRES_DB: peluvis
+    ports:
+      - "5432:5432"
+    volumes:
+      - peluvis_pgdata:/var/lib/postgresql/data
+
+volumes:
+  peluvis_pgdata:

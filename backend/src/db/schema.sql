@@ -1,0 +1,42 @@
+CREATE EXTENSION IF NOT EXISTS "pgcrypto";
+
+CREATE TABLE IF NOT EXISTS users (
+  id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+  name VARCHAR(120) NOT NULL,
+  email VARCHAR(160) UNIQUE NOT NULL,
+  password_hash TEXT NOT NULL,
+  role VARCHAR(30) NOT NULL DEFAULT 'user',
+  created_at TIMESTAMP NOT NULL DEFAULT NOW()
+);
+
+CREATE TABLE IF NOT EXISTS profiles (
+  user_id UUID PRIMARY KEY REFERENCES users(id) ON DELETE CASCADE,
+  city VARCHAR(120),
+  phone VARCHAR(30),
+  avatar_url TEXT,
+  bio TEXT
+);
+
+CREATE TABLE IF NOT EXISTS pets (
+  id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+  owner_id UUID REFERENCES users(id) ON DELETE SET NULL,
+  name VARCHAR(120) NOT NULL,
+  species VARCHAR(40) NOT NULL,
+  breed VARCHAR(120),
+  sex VARCHAR(20),
+  age_months INT,
+  size VARCHAR(30),
+  color VARCHAR(80),
+  status VARCHAR(30) NOT NULL DEFAULT 'active',
+  created_at TIMESTAMP NOT NULL DEFAULT NOW()
+);
+
+CREATE TABLE IF NOT EXISTS posts (
+  id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+  author_id UUID NOT NULL REFERENCES users(id) ON DELETE CASCADE,
+  pet_id UUID REFERENCES pets(id) ON DELETE SET NULL,
+  type VARCHAR(30) NOT NULL,
+  content TEXT NOT NULL,
+  status VARCHAR(30) NOT NULL DEFAULT 'published',
+  created_at TIMESTAMP NOT NULL DEFAULT NOW()
+);
